@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <main class="form-page">
+    <section class="form-section">
+      <div class="form-container">
+        <header class="form-header">
+          <h1>Encuesta de sadisfacción</h1>
+          <p>Por favor lee con cuidado y respone sinceramente,
+            la información solicitada con <strong>*</strong> es obligatoria.
+          </p>
+          <link rel="stylesheet" href="../css/styles.css">
+        </header>
+
+
+        <form class="contact-form"
+        action="*"
+        method="post">
+          
+          <section class="form-block">
+              <h2>Datos Personales</h2>             
+              <div class="form-grid">
+                  <div class="form-field">
+                    <label for="nombre">Nombre
+                    <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                  <input type="text"
+                  placeholder="Miku"
+                  name="nombre"
+                  id="nombre"
+                  required>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="apellido">Apellido
+                    <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input type="text"
+                      placeholder="Nakano"
+                      name="apellido"
+                      id="apellido"
+                      required>
+                  </div>
+              </div>
+              <div class="form-grid">
+                
+                <div class="form-field">
+                  <label for="correo">Correo electrónico
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email"
+                    placeholder="miku.nakano@example.com"
+                    name="correo"
+                    id="correo"
+                    required>
+                  
+                    
+                </div>
+                
+                <div class="form-field">
+                  <label for="telefono">Teléfono
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input type="tel"
+                    placeholder="+57 300 000 0000"
+                    name="telefono"
+                    id="telefono"
+                    minlength="10"
+                    required> 
+                </div>
+                
+
+              </div>
+              <h3>Formulario</h3>
+              <fieldset> 
+    
+              <legend> 
+                ¿cómo fue tu experiencia con nuestro servicio?<span class="required-mark" aria-hidden="true">*</span> 
+              </legend> 
+    
+              <div class="choice-list"> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad" 
+                    value="excelente" 
+                    checked 
+                  > 
+    
+                  <span>Excelente</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad"
+                    value="Buena" 
+                  > 
+    
+                  <span>Buena</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad" 
+                    value="regular" 
+                  > 
+    
+                  <span>Regular</span> 
+                </label> 
+
+                    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad" 
+                    value="mala" 
+                  > 
+    
+                  <span>Mala</span> 
+                </label> 
+                
+                    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad" 
+                    value="pesima" 
+                  > 
+    
+                  <span>Pésima</span> 
+                </label> 
+              </div> 
+    
+            </fieldset>   
+
+
+            <fieldset> 
+    
+              <legend> 
+                ¿cómo calificarías nuestro servicio del 1 al 5? siendo 1 pésimo y 5 excelente<span class="required-mark" aria-hidden="true">*</span> 
+              </legend> 
+    
+              <div class="choice-list"> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="servicio" 
+                    value="excelente" 
+                    checked 
+                  > 
+    
+                  <span>5</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="servicio"
+                    value="Buena" 
+                  > 
+    
+                  <span>4</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="servicio" 
+                    value="regular" 
+                  > 
+    
+                  <span>3</span> 
+                </label> 
+
+                    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="servicio" 
+                    value="mala" 
+                  > 
+    
+                  <span>2</span> 
+                </label> 
+                
+                    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="servicio" 
+                    value="pesima" 
+                  > 
+    
+                  <span>1</span> 
+                </label> 
+              </div> 
+    
+            </fieldset>
+
+                          <fieldset> 
+    
+              <legend> 
+                ¿Qué te pareció mejor de nuestro servicio?<span class="required-mark" aria-hidden="true">*</span> 
+              </legend> 
+    
+              <div class="choice-list"> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="excelente" 
+                    checked 
+                  > 
+    
+                  <span>La atención del personal</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="checkbox" 
+                    name="mejoras"
+                    value="Buena" 
+                  > 
+    
+                  <span>La presentación de nuestra comida</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="regular" 
+                  > 
+    
+                  <span>La decoración del lugar</span> 
+                </label> 
+
+                    
+                <label class="choice"> 
+                  <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="mala" 
+                  > 
+    
+                  <span>Las instalaciones</span> 
+                </label> 
+                
+                    
+                <label class="choice"> 
+                  <input 
+                    type="checkbox" 
+                    name="mejoras" 
+                    value="pesima" 
+                  > 
+    
+                  <span>Nuestro cátalogo de comidas</span> 
+                </label> 
+              </div> 
+    
+            </fieldset>
+            <div class="form-field"> 
+ 
+              <label for="rango"> 
+                En un rango del 1 al 5, siendo 1 todo el servicio y 5 nada, ¿cuánto deberíamos mejorar?<span class="required-mark" aria-hidden="true">*</span> 
+              </label> 
+    
+              <input 
+                type="range" 
+                id="rango" 
+                name="rango" 
+                min="1"
+                max="5"
+                value="1"
+              > 
+            </div> 
+
+            <label class="choice"> 
+              <input 
+                type="checkbox" 
+                name="datos" 
+                required 
+              > 
+    
+              <span> 
+                Autorizo el tratamiendo de mis datos. 
+              </span> 
+            </label>
+
+            <label class="choice"> 
+              <input 
+                type="checkbox" 
+                name="terminos" 
+                required 
+              > 
+    
+              <span> 
+                he leido y respondido con cuidado y sinceridad la encuesta. 
+              </span> 
+            </label>
+
+            <div class="form-actions"> 
+    
+              <button 
+                type="submit" 
+                class="button button-primary" 
+              > 
+                Registrarse 
+              </button> 
+    
+              <button
+                type="reset" 
+                class="button button-secondary" 
+              > 
+                Limpiar información 
+              </button> 
+    
+            </div>  
+          </section>
+          <div class="brand">
+          <span class="brand-name">Asian Food®</span>
+          </div>
+      </div>
+      <img src="../img/logo3.jpg" alt="Logo de la empresa" class="brand-logo">
+      </form> 
+  </section>
+  </main>
+</body>
+</html>

@@ -3,15 +3,15 @@
   --primary-hover: #084cc7; 
   --primary-light: #edf4ff; 
  
-  --navy: #0F1237; 
-  --text: #3F3A3A; 
-  --muted: #667085; 
+  --navy: #1F2937; 
+  --text: #4B5563; 
+  --muted: #6B7280; 
  
   --border: #500000; 
   --background: #EDEDED; 
   --background-soft: #1F2937; 
  
-  --danger: #c62828; 
+  --danger: #991B1B; 
  
   --radius-sm: 8px; 
   --radius-md: 2px; 
@@ -199,15 +199,39 @@ body {
  
  
 .form-block h2 { 
-  margin: 
-    0; 
+  margin-top:10px; 
  
   color: 
-    var(--navy); 
+    var(--text); 
  
   font-size: 
-    1.15rem; 
+    clamp( 
+      0.8rem, 
+      1.2vw, 
+      2.15rem 
+    ); 
+ 
+  line-height: 
+    1.05; 
 } 
+
+.form-block h3 { 
+  margin-top:10px; 
+ 
+  color: 
+    var(--text); 
+ 
+  font-size: 
+    clamp( 
+      0.8rem, 
+      1.2vw, 
+      2.15rem 
+    ); 
+ 
+  line-height: 
+    1.05; 
+} 
+ 
  
  
 .form-grid { 
@@ -627,7 +651,7 @@ fieldset legend {
 }
 
 .brand-name {
-  color: var(--navy);
-  font-size: 1.2rem;
+  color: var(--muted);
+  font-size: 1rem;
   font-weight: 700;
 }
