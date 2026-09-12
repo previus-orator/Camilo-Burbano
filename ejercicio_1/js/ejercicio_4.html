@@ -3,15 +3,13 @@
 <body>
   <main class="form-page">
     <section class="form-section">
+      <img src="../img/logo1.jpg" alt="Logo de la empresa" class="brand-logo">
       <div class="form-container">
         <header class="form-header">
-          <div class="brand">
-          <img src="../img/logo.png" alt="Logo de la empresa" class="brand-logo">
-          <span class="brand-name">Dragon Company®  Empresa de sofware para ciberseguridad</span>
-          </div>
-          <h1>Formulario de aplicación</h1>
-          <p>Adjunte su información para poder aplicar a la vacante,
-            la información solicitada con <strong>*</strong> es obligatoria</p>
+          <h1>Formulario de afiliación</h1>
+          <p>Adjunte su información para poder registrarse en nuestra página web
+            (Y disfrutar los mejores descuentos en pescados)
+          </p>
           <link rel="stylesheet" href="../css/styles.css">
         </header>
 
@@ -20,16 +18,14 @@
         action="*"
         method="post">
           
-          <section class="form-block">
-            
-            <h1>Datos personales</h1>              
+          <section class="form-block">             
               <div class="form-grid">
                   <div class="form-field">
                     <label for="nombre">Nombre
                     <span class="required-mark" aria-hidden="true">*</span>
                     </label>
                   <input type="text"
-                  placeholder="Leon"
+                  placeholder="Itsuki"
                   name="nombre"
                   id="nombre"
                   required>
@@ -40,7 +36,7 @@
                     <span class="required-mark" aria-hidden="true">*</span>
                     </label>
                     <input type="text"
-                      placeholder="Keneddy"
+                      placeholder="Nakano"
                       name="apellido"
                       id="apellido"
                       required>
@@ -53,71 +49,44 @@
                     <span class="required-mark" aria-hidden="true">*</span>
                   </label>
                   <input type="email"
-                    placeholder="leon.keneddy@example.com"
+                    placeholder="itsuki.nakano@example.com"
                     name="correo"
                     id="correo"
                     required>
+                  
+                    
                 </div>
                 
                 <div class="form-field">
-                  <label for="telefono">Teléfono
+                  <label for="contraseña">Contraseña
                     <span class="required-mark" aria-hidden="true">*</span>
                   </label>
-                  <input type="tel"
-                    placeholder="+57 300 000 0000"
-                    name="telefono"
-                    id="telefono"
+                  <input type="password"
+                    placeholder="escribe una contraseña segura"
+                    name="contraseña"
+                    id="contraseña"
+                    minlength="8"
+                    aria-describedby="descripción"
                     required>
+                  <small id="descripción">Te recomendamos una contraseña con números, caracteres especiales
+                  y mayúsculas, ¡protege tus descuentos de nuestro domingo de pasta!.</small>  
                 </div>
-              </div>
-            <fieldset>
-                    <legend>Selecciona tu modalidad disponible</legend>  
-              <div class="choice-list"> 
-    
-                <label class="choice"> 
-                  <input 
-                    type="radio" 
-                    name="modalidad" 
-                    value="Presencial" 
-                  > 
-                  <span>Presencial</span> 
-                </label> 
-    
-                <label class="choice"> 
-                  <input 
-                    type="radio" 
-                    name="modalidad" 
-                    value="remoto" 
-                  > 
-                  <span>Remoto</span> 
-                </label> 
-    
-                <label class="choice"> 
-                  <input 
-                    type="radio" 
-                    name="modalidad" 
-                    value="hibrido" 
-                  > 
-                  <span>Hibrido</span> 
-                </label> 
-    
-              </div>
-            </fieldset>
+                
 
-            <fieldset>
-                  <legend>Carga el archivo de tu cv<strong>*</strong></legend>
-                <div class="form-field"> 
-                    <input type="file"
-                    id="File"
-                    name="File"
-                    accept=".pdf,.docx,.doc"
-                    required>
+              </div>
 
-                    <small class="field-help"> 
-                    Formatos: PDF, Word. 
-                    </small>
-                </div>
-            </fieldset>
+            <label class="choice"> 
+              <input 
+                type="checkbox" 
+                name="datos" 
+                required 
+              > 
+    
+              <span> 
+                Autorizo el tratamiendo de mis datos. 
+              </span> 
+            </label>
+
             <label class="choice"> 
               <input 
                 type="checkbox" 
@@ -126,27 +95,31 @@
               > 
     
               <span> 
-                Autorizo el tratamiendo de mis datos con fines empresariales. 
+                Acepto los <a href="https://www.youtube.com/watch?v=wLkfz10Srxw">terminos y condiciones</a>. 
               </span> 
             </label>
+
             <div class="form-actions"> 
     
               <button 
                 type="submit" 
                 class="button button-primary" 
               > 
-                Enviar solicitud 
+                Registrarse 
               </button> 
     
               <button
                 type="reset" 
                 class="button button-secondary" 
               > 
-                Limpiar 
+                Limpiar información 
               </button> 
     
             </div>  
           </section>
+          <div class="brand">
+          <span class="brand-name">Asian Food®</span>
+          </div>
         </div>
       </form> 
   </section>

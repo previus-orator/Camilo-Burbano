@@ -20,7 +20,7 @@
   --shadow: 
     0 24px 200px rgba(29, 48, 20, 0.1); 
  
-  --container:980px; 
+  --container:700px; 
 } 
  
  
@@ -49,7 +49,10 @@ body {
     var(--background-soft); 
  
   color: 
-    var(--text); 
+    var(--text);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/650834c8ca2f054f5dad2d54/1695036668607-DOT6HU8G3JNK5XVH2X47/the-appeal-of-japanese-food-why-we-love-it-so-much.jpg); 
+  background-size: cover;  
+  
 } 
  
  
@@ -59,13 +62,26 @@ body {
   min-height: 100vh; 
 } 
  
- 
+.form-section img {
+    width: 320px;
+
+    height: auto;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+
 .form-section { 
   padding: 
-    0px 20px;
-  min-height: 100vh;
+    70px 500px;
   display: flex;
-  flex-direction: column;  
+  align-items: stretch;  
+  gap:0;
+  flex-wrap: nowrap;
+  justify-content: center;
     
 } 
  
@@ -93,7 +109,8 @@ body {
     4px;      
  
   background: 
-    var(--background); 
+    var(--background);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0; 
 
  
 } 
@@ -165,6 +182,7 @@ body {
  
   gap: 
     26px; 
+    
 } 
  
  
@@ -194,16 +212,16 @@ body {
  
 .form-grid { 
   display: 
-    grid; 
+    row; 
  
   grid-template-columns: 
-    repeat( 
-      2, 
-      minmax(0, 1fr) 
+    repeat(  
+      minmax(0, 1fr),
+      2
     ); 
  
   gap: 
-    20px; 
+    10px; 
 } 
  
  
@@ -212,7 +230,8 @@ body {
     grid; 
  
   gap: 
-    8px; 
+    8px;
+  margin-bottom: 5px;   
 } 
  
  
