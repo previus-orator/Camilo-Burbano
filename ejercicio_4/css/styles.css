@@ -141,6 +141,22 @@ body {
   line-height: 
     1.05; 
 } 
+.form-block h1 { 
+  margin-top:10px; 
+ 
+  color: 
+    var(--text); 
+ 
+  font-size: 
+    clamp( 
+      0.8rem, 
+      1.2vw, 
+      2.15rem 
+    ); 
+ 
+  line-height: 
+    1.05; 
+} 
  
  
 .form-header p { 
@@ -600,7 +616,8 @@ fieldset legend {
   width: 155px;           
   height: 125px;          
   border-radius: 25%;    
-  object-fit: scale-down;     
+  object-fit: scale-down;
+  margin-top: 20px;     
 }
 
 .brand-name {
