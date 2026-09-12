@@ -52,7 +52,8 @@ body {
     var(--text); 
 } 
  
-  
+ 
+/* PÁGINA */ 
  
 .form-page { 
   min-height: 100vh; 
@@ -97,7 +98,8 @@ body {
  
 } 
  
-
+ 
+/* ENCABEZADO */ 
  
 .form-header { 
   max-width: 
@@ -225,6 +227,9 @@ fieldset legend {
   font-weight: 
     650; 
 } 
+ 
+ 
+/* CONTROLES */ 
  
 .form-field input, 
 .form-field select, 
@@ -597,14 +602,14 @@ fieldset legend {
 }
 
 .brand-logo {
-  width: 155px;           
-  height: 125px;          
-  border-radius: 25%;    
-  object-fit: scale-down;     
+  width: 75px;           
+  height: 75px;          
+  border-radius: 50%;    
+  object-fit: cover;     
 }
 
 .brand-name {
   color: var(--navy);
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
