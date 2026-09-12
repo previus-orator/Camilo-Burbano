@@ -3,24 +3,24 @@
   --primary-hover: #084cc7; 
   --primary-light: #edf4ff; 
  
-  --navy: #34154F; 
-  --text: #16213a; 
+  --navy: #0F1237; 
+  --text: #3F3A3A; 
   --muted: #667085; 
  
   --border: #500000; 
   --background: #EDEDED; 
-  --background-soft: #111827; 
+  --background-soft: #1F2937; 
  
   --danger: #c62828; 
  
-  --radius-sm: 15px; 
-  --radius-md: 21px; 
+  --radius-sm: 8px; 
+  --radius-md: 2px; 
   --radius-lg: 22px; 
  
   --shadow: 
     0 24px 200px rgba(29, 48, 20, 0.1); 
  
-  --container: 980px; 
+  --container:980px; 
 } 
  
  
@@ -62,11 +62,18 @@ body {
  
 .form-section { 
   padding: 
-    70px 20px; 
+    0px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  
+    
 } 
  
  
 .form-container { 
+  
+  flex: 1;  
+
   width: 
     min( 
       100%, 
@@ -76,21 +83,19 @@ body {
   margin-inline: 
     auto; 
  
-  padding: 
+  padding-left: 
     42px; 
+  padding-right: 
+    42px;
+  padding-top: 
+    5px;
+  padding-bottom: 
+    4px;      
  
   background: 
     var(--background); 
+
  
-  border: 
-    1px solid 
-    var(--border); 
- 
-  border-radius: 
-    var(--radius-lg); 
- 
-  box-shadow: 
-    var(--shadow); 
 } 
  
  
@@ -587,4 +592,24 @@ fieldset legend {
     font-size: 0.9rem; 
     color: var(--muted);
     margin-bottom: 5px;
+}
+
+.brand {
+  display: flex;
+  align-items: center; 
+  gap: 12px;          
+  margin-bottom: 16px; 
+}
+
+.brand-logo {
+  width: 75px;           
+  height: 75px;          
+  border-radius: 50%;    
+  object-fit: cover;     
+}
+
+.brand-name {
+  color: var(--navy);
+  font-size: 1.2rem;
+  font-weight: 700;
 }

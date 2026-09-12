@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <main class="form-page">
+    <section class="form-section">
+      <div class="form-container">
+        <header class="form-header">
+          <div class="brand">
+          <img src="../img/logo.png" alt="Logo de la empresa" class="brand-logo">
+          <span class="brand-name">Dragon Company®  Empresa de sofware para ciberseguridad</span>
+          </div>
+          <h1>Formulario de aplicación</h1>
+          <p>Adjunte su información para poder aplicar a la vacante,
+            la información solicitada con <strong>*</strong> es obligatoria</p>
+          <link rel="stylesheet" href="../css/styles.css">
+        </header>
+
+
+        <form class="contact-form"
+        action="*"
+        method="post">
+          
+          <section class="form-block">
+            
+            <h1>Datos personales</h1>              
+              <div class="form-grid">
+                  <div class="form-field">
+                    <label for="nombre">Nombre
+                    <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                  <input type="text"
+                  placeholder="Leon"
+                  name="nombre"
+                  id="nombre"
+                  required>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="apellido">Apellido
+                    <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input type="text"
+                      placeholder="Keneddy"
+                      name="apellido"
+                      id="apellido"
+                      required>
+                  </div>
+              </div>
+              <div class="form-grid">
+                
+                <div class="form-field">
+                  <label for="correo">Correo electrónico
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email"
+                    placeholder="leon.keneddy@example.com"
+                    name="correo"
+                    id="correo"
+                    required>
+                </div>
+                
+                <div class="form-field">
+                  <label for="telefono">Teléfono
+                    <span class="required-mark" aria-hidden="true">*</span>
+                  </label>
+                  <input type="tel"
+                    placeholder="+57 300 000 0000"
+                    name="telefono"
+                    id="telefono"
+                    required>
+                </div>
+              </div>
+            <fieldset>
+                    <legend>Selecciona tu modalidad disponible</legend>  
+              <div class="choice-list"> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad" 
+                    value="Presencial" 
+                  > 
+                  <span>Presencial</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad" 
+                    value="remoto" 
+                  > 
+                  <span>Remoto</span> 
+                </label> 
+    
+                <label class="choice"> 
+                  <input 
+                    type="radio" 
+                    name="modalidad" 
+                    value="hibrido" 
+                  > 
+                  <span>Hibrido</span> 
+                </label> 
+    
+              </div>
+            </fieldset>
+
+            <fieldset>
+                  <legend>Carga el archivo de tu cv<strong>*</strong></legend>
+                <div class="form-field"> 
+                    <input type="file"
+                    id="File"
+                    name="File"
+                    accept=".pdf,.docx,.doc"
+                    required>
+
+                    <small class="field-help"> 
+                    Formatos: PDF, Word. 
+                    </small>
+                </div>
+            </fieldset>
+            <label class="choice"> 
+              <input 
+                type="checkbox" 
+                name="terminos" 
+                required 
+              > 
+    
+              <span> 
+                Autorizo el tratamiendo de mis datos con fines empresariales. 
+              </span> 
+            </label>
+            <div class="form-actions"> 
+    
+              <button 
+                type="submit" 
+                class="button button-primary" 
+              > 
+                Enviar solicitud 
+              </button> 
+    
+              <button
+                type="reset" 
+                class="button button-secondary" 
+              > 
+                Limpiar 
+              </button> 
+    
+            </div>  
+          </section>
+        </div>
+      </form> 
+  </section>
+  </main>
+</body>
+</html>
