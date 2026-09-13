@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <main class="form-page">
+    <section class="form-section">
+      <div class="div-img">
+      <img src="../img/logo5.jpeg" alt="Logo de la empresa" class="brand-logo">
+      </div>
+      <div class="form-container">
+        <header class="form-header">
+          <h1>Formulario de soporte</h1>
+          <p>Adjunte su información y queja para poder solucionar su problema,
+            rellene todos los campos para poder brindarte mejor ayuda.
+          </p>
+          <link rel="stylesheet" href="../css/styles.css">
+        </header>
+
+
+        <form class="contact-form"
+        action="*"
+        method="post">
+          
+          <section class="form-block">
+              <h2>Datos personales</h2>
+              
+              <div class="form-grid">
+                  <div class="form-field">
+                    <label for="nombre">Nombre
+                    </label>
+                  <input type="text"
+                  placeholder="Nino"
+                  name="nombre"
+                  id="nombre"
+                  required>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="apellido">Apellido
+                    </label>
+                    <input type="text"
+                      placeholder="Nakano"
+                      name="apellido"
+                      id="apellido"
+                      required>
+                  </div>
+              </div>
+              <div class="form-grid">
+                
+                <div class="form-field">
+                  <label for="correo">Correo electrónico
+                  </label>
+                  <input type="email"
+                    placeholder="nino.nakano@example.com"
+                    name="correo"
+                    id="correo"
+                    required>
+                  
+                    
+                </div>
+                
+                <div class="form-field">
+                  <label for="contraseña">Teléfono
+                  </label>
+                  <input type="tel"
+                    placeholder="+57 300 000 0000"
+                    name="telefono"
+                    id="telefono"
+                    required>  
+                </div>
+
+              </div>
+
+              <h3>Información del problema</h3>
+              <div class="form-field">
+                <label for="prioridad">¿Qué tanto afecta su problema al uso del software</label>
+                <input type="range"
+                  id="prioridad"
+                  name="prioridad"
+                  max="5"
+                  min="1"
+                  value="1"
+                  required>
+                <small class="field-help"> 
+                siendo 1 muy poco y 5 mucho. 
+                </small> 
+              </div>
+                
+              <div class="form-field">
+                 
+                
+ 
+                <label for="mensaje"> 
+                  Describa su problema 
+                </label> 
+      
+                <textarea 
+                  id="mensaje" 
+                  name="mensaje" 
+                  rows="7" 
+                  maxlength="1200" 
+                  placeholder="Cuéntenos brevemente su problema..." 
+                ></textarea> 
+      
+                <small class="field-help"> 
+                  Máximo 1200 caracteres. 
+                </small> 
+
+              </div>
+
+              <fieldset>
+                  <legend>Carga un archivo soporte de tu problema</legend>
+                <div class="form-field"> 
+                    <input type="file"
+                    id="File"
+                    name="File"
+                    accept=".pdf,.docx,.doc"
+                    required>
+
+                    <small class="field-help"> 
+                    Formatos: PDF, Word. 
+                    </small>
+                </div>
+            </fieldset>
+
+      
+
+              
+
+              <div class="form-grid">  
+                <label class="choice"> 
+                  <input 
+                    type="checkbox" 
+                    name="datos" 
+                    required 
+                  > 
+        
+                  <span> 
+                    Autorizo el tratamiendo de mis datos. 
+                  </span> 
+                </label>
+
+                <label class="choice"> 
+                  <input 
+                    type="checkbox" 
+                    name="terminos" 
+                    required 
+                  > 
+        
+                  <span> 
+                    Acepto los <a href="https://www.youtube.com/watch?v=wLkfz10Srxw">terminos y condiciones</a>. 
+                  </span> 
+                </label>
+              </div> 
+
+              <div class="form-actions"> 
+      
+                <button 
+                  type="submit" 
+                  class="button button-primary" 
+                > 
+                  Registrarse 
+                </button> 
+      
+                <button
+                  type="reset" 
+                  class="button button-secondary" 
+                > 
+                  Limpiar información 
+                </button> 
+    
+            </div>  
+          </section>
+          <div class="brand">
+          <span class="brand-name">Alice Software® programas de diseño gráfico</span>
+          </div>
+        </div>
+      </form> 
+  </section>
+  </main>
+</body>
+</html>
