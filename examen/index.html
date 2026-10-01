@@ -3,173 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hospital">
+    <meta name="description" content="Hospital SaludVida">
     <title>SaludVida Hospital</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="container  header-container">
+        <div class="container header-container">
             <a class="brand" href="index.html">
-                <img src="img/logos/logo-saludvida-header.png" alt="Logo de la empresa" class="brand-logo">
+                <img src="img/logos/logo-saludvida-header.png" alt="Logo de SaludVida" class="brand-logo">
             </a>
 
             <nav class="nav" aria-label="Navegación principal">
                 <a href="index.html">Inicio</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#servicios">Servicios</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
             <div class="lupa">
-                <img src="img/icons/lupa.png" alt="Logo de la empresa" class="search">
+                <img src="img/icons/lupa.png" alt="Buscar" class="search">
             </div>
         </div>
-
     </header>
 
     <main>
         <section class="hero" id="inicio">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <h1>Cuidamos lo más importante:    
-                        <span>tu salud</span>
-                    </h1>
+                    <h1>Cuidamos lo más importante: <br><span>tu salud</span></h1>
                     <p class="hero-description">
-                        Atención médica integral con un equipo humano 
-                        comprometido y tecnología a la vanguardia.
+                        Atención médica integral con un equipo humano comprometido y tecnología a la vanguardia.
                     </p>
                     <div class="hero-actions">
                         <a class="primary-action" href="#servicios">Conoce nuestros servicios</a>
                     </div>
-            </div>
-        </section>
-        <section class="service-section">
-            <div class="container">
-                <div class="feature-grid">
-                    <article class="feature-card1"><span class="product-img"><img src="img/icons/atencion.png" class="peluches-visual"><h1>Atención integral</h1></span><p>para toda la familia</p></article>
-                    <article class="feature-card"><span class="product-img"><img src="img/icons/corazon.png" class="peluches-visual"><h1>Especialistas</h1></span><p>altamente capacitados</p></article>
-                    <article class="feature-card"><span class="product-img"><img src="img/icons/tecnologia.png" class="peluches-visual"><h1>Tecnología</h1></span><p>médica avanzada</p></article>
-                    <article class="feature-card"><span class="product-img"><img src="img/icons/personas.png" class="peluches-visual"><h1>Compromiso</h1></span><p>con la comunidad</p></article>
                 </div>
             </div>
         </section>
 
-        <section class="services" id="servicios">
+        <section class="service-section">
             <div class="container">
-                <header class="section-heading footer-separador">
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <img src="img/icons/atencion.png" class="peluches-visual" alt="Icono Atención">
+                        <h1>Atención integral</h1>
+                        <p>para toda la familia</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/icons/corazon.png" class="peluches-visual" alt="Icono Especialistas">
+                        <h1>Especialistas</h1>
+                        <p>altamente capacitados</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/icons/tecnologia.png" class="peluches-visual" alt="Icono Tecnología">
+                        <h1>Tecnología</h1>
+                        <p>médica avanzada</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/icons/personas.png" class="peluches-visual" alt="Icono Compromiso">
+                        <h1>Compromiso</h1>
+                        <p>con la comunidad</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="noticias">
+            <div class="container">
+                <header class="section-heading">
                     <h2>Noticias Destacadas</h2>
-                    <h3>Ver todas  →</h3>
+                    <h3>Ver todas &rarr;</h3>
                 </header>
 
                 <div class="services-grid">
                     <article class="service-card">
-                        <span class="product-img"><img src="img/logos/sala.jpg" class="sala-visual"></span>
+                        <img src="img/logos/sala.jpg" class="sala-visual" alt="Unidad de cuidados intensivos">
                         <span>Institucional</span>
-                        <h3>Inaguramos la nueva unidad de cuidados intensivos.</h3>
-                        <p>ampliamos nuestra capacidad de atencion con lo ultimo en nueva generación de tecnologia</p>
+                        <h3>Inauguramos la nueva unidad de cuidados intensivos.</h3>
+                        <p>Ampliamos nuestra capacidad de atención con lo último en nueva generación de tecnología.</p>
                         <div class="tag-list">
-                            <span><a href="pentesting.html">10 abr. 2026 →</a></span>
+                            <a href="#">10 abr. 2026 &rarr;</a>
                         </div>
                     </article>
                     <article class="service-card">
-                        <span class="product-img"><img src="img/logos/doctora.jpg" class="sala-visual"></span>
+                        <img src="img/logos/doctora.jpg" class="sala-visual" alt="Vacunación infantil">
                         <span>Salud</span>
-                        <h3>Campañas de vacunación infantil en nuestra cuidad</h3>
+                        <h3>Campañas de vacunación infantil en nuestra ciudad</h3>
                         <p>Jornadas de vacunación gratuitas para niños y niñas de 0 a 5 años.</p>
                         <div class="tag-list">
-                            <span><a href="pentesting.html">8 abr. 2026 →</a></span>
+                            <a href="#">8 abr. 2026 &rarr;</a>
                         </div>
                     </article>
-
                     <article class="service-card">
-                        <span class="product-img"><img src="img/logos/yoga.jpg" class="sala-visual"></span>
-                        <h1>Comunidad</h1>
+                        <img src="img/logos/yoga.jpg" class="sala-visual" alt="Jornada de bienestar">
+                        <span>Comunidad</span>
                         <h3>Jornada de bienestar para nuestros colaboradores</h3>
-                        <p>mas de 200 empleados participaron en campañas de salud fisica y mental.</p>
+                        <p>Más de 200 empleados participaron en campañas de salud física y mental.</p>
                         <div class="tag-list">
-                            <a href="desarrollo-seguro.html">5 abr. 2026 →</a>
+                            <a href="#">5 abr. 2026 &rarr;</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
-                <section class="services" id="servicios">
-            <div class="container">
-                <header class="section-heading footer-separador">
-                    <h2>Nuestros Servicios</h2>
-                    <h3>Ver todos  →</h3>
-                </header>
-                <div class="feature-grid1">
-                    <article class="feature-card1"><span class="product-img"><img src="img/icons/atencion.png" class="peluches-visual"><h1>consulta externa</h1></span><p>atencion medica especializada para todas las edades</p></article>
-                    <article class="feature-card"><span class="product-img"><img src="img/icons/corazon.png" class="peluches-visual"><h1>Urgencias</h1></span><p>atencion 24/7 para situaciones criticas</p></article>
-                    <article class="feature-card"><span class="product-img"><img src="img/icons/tecnologia.png" class="peluches-visual"><h1>hospitalicación</h1></span><p>habitaciones seguras y confortables</p></article>
-                    <article class="feature-card"><span class="product-img"><img src="img/icons/personas.png" class="peluches-visual"><h1>Programas de salud</h1></span><p>prevencion y bienestar para la comunidad</p></article>
-                </div>
 
+        <section class="services services-alt" id="servicios">
+            <div class="container">
+                <header class="section-heading">
+                    <h2>Nuestros Servicios</h2>
+                    <h3>Ver todos &rarr;</h3>
+                </header>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <img src="img/icons/atencion.png" class="peluches-visual" alt="Consulta externa">
+                        <h1>Consulta externa</h1>
+                        <p>Atención médica especializada para todas las edades.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/icons/corazon.png" class="peluches-visual" alt="Urgencias">
+                        <h1>Urgencias</h1>
+                        <p>Atención 24/7 para situaciones críticas.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/icons/tecnologia.png" class="peluches-visual" alt="Hospitalización">
+                        <h1>Hospitalización</h1>
+                        <p>Habitaciones seguras y confortables.</p>
+                    </article>
+                    <article class="feature-card">
+                        <img src="img/icons/personas.png" class="peluches-visual" alt="Programas de salud">
+                        <h1>Programas de salud</h1>
+                        <p>Prevención y bienestar para la comunidad.</p>
+                    </article>
+                </div>
             </div>
         </section>
-
     </main>
+
     <footer class="footer" id="footer">
-        <div class="footer-grid1">
-            <div class="container footer-grid">
+        <div class="container footer-grid1">
+            <div class="footer-grid">
                 <section>
                     <div class="logo-grid">
-                        <span><img src="img/logos/logo-saludvida-footer.png" alt="Logo de la empresa" class="footer-logo"></span>
-                        <p>Trabajamos cada dia por una mejor calidad de vida, promoviendo
-                            la salud y el bienestar de nuestra comunidad
-                        </p>
+                        <img src="img/logos/logo-saludvida-footer.png" alt="Logo SaludVida Footer" class="footer-logo">
+                        <p>Trabajamos cada día por una mejor calidad de vida, promoviendo la salud y el bienestar de nuestra comunidad.</p>
                     </div>
                 </section>
                 <section>
                     <h3>Navegación</h3>
                     <div class="nav-grid">
-                        <a href="#inicio">inicio</a>
-                        <a href="index.html">Noticias</a>
-                        <a href="index.html">Servicios</a>
-                        <a href="index.html">nosotros</a>
-                        <a href="contacto.html">contacto</a>
+                        <a href="#inicio">Inicio</a>
+                        <a href="#noticias">Noticias</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="contacto.html">Contacto</a>
                     </div>
                 </section>
                 <section>
                     <h3>Servicios</h3>
                     <div class="nav-grid">
-                        <a>Consulta externa</a>
-                        <a>Urgencias</a>
-                        <a>Hospitalizacion</a>
-                        <a>Programas de salud</a>
+                        <a href="#">Consulta externa</a>
+                        <a href="#">Urgencias</a>
+                        <a href="#">Hospitalización</a>
+                        <a href="#programs">Programas de salud</a>
                     </div>
                 </section>
                 <section>
                     <h3>Síguenos</h3>
                     <div class="redes">
-                    <div class="r-iconos">    
-                        <a href="https://www.facebook.com"><img src="img/icons/facebook.png" class="r-img" ></a>
-                    </div>
-                    <div class="r-iconos">                   
-                        <a href="https://www.instagram.com"><img src="img/icons/instagram.png" class="r-img"></a>
-                    </div>
-                    <div class="r-iconos">              
-                        <a href="https://www.linkedin.com"><img src="img/icons/linkedin.png" class="r-img"></a>
-                    </div>
-                    <div class="r-iconos">                        
-                        <a href="https://www.youtube.com"><img src="img/icons/youtube.png" class="r-img"></a>
-                    </div>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="img/icons/facebook.png" class="r-img" alt="Facebook"></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="img/icons/instagram.png" class="r-img" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener"><img src="img/icons/linkedin.png" class="r-img" alt="LinkedIn"></a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener"><img src="img/icons/youtube.png" class="r-img" alt="YouTube"></a>
                     </div>
                 </section>
             </div>
-            <div class="container2 footer-separador">
-                <p>©2026 Hospital SaludVida Todos los derechos reservados.</p>
+            <div class="footer-separador">
+                <p>&copy; 2026 Hospital SaludVida. Todos los derechos reservados.</p>
                 <div class="footer-p">
-                    <p>Politica de privacidad</p>
+                    <p><a href="#">Política de privacidad</a></p>
                     <p>|</p>
-                    <p>Términos de uso</p>
+                    <p><a href="#">Términos de uso</a></p>
                 </div>
-
             </div>
         </div>
-
     </footer>
-
-
-
 </body>
 </html>
