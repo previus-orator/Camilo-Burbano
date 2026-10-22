@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+:root {
+  --color-heading: #ff4900;
+  --color-par: #0093ff;
+  --color-párrafos: #c500ff;
+  --color-link: #001bff;
+  --color-link-v: #4caf50;
+  --color-link-h: #ff6600;
+  --color-table-borde: #ffffff;
+  --color-table-header: #000000;
+  --color-table-row: #bec1c3;
+  --color-table-row-mitad: #045795;
+  --font-body: Arial, sans-serif;
+  --font-accent: 'Nerko One', cursive;
+  --font-size-body: 1rem;
+  --font-size-small: 12px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  color: #1f2937;
+  font-family: var(--font-body);
+}
+
+h2 {
+  color: var(--color-heading);
+  font-size: 2rem;
+}
+
+p {
+  color: var(--color-par);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+}
+
+p.párrafos {
+  color: var(--color-párrafos);
+  font-family: var(--font-párrafos);
+  font-size: var(--font-size-small);
+}
+
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-v);
+}
+
+a:hover {
+  color: var(--color-link-h);
+  text-decoration: underline;
+}
+
+table {
+  margin-top: 1rem;
+  min-width: 320px;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid var(--color-table-borde);
+}
+
+th {
+  background-color: 1px solid var(--color-table-header);
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+td {
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--color-table-row);
+  color: #000000;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-table-row-mitad);
+  color: #ffffff;
+}
