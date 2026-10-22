@@ -1,0 +1,11 @@
+.footer-1 {
+  width: 140px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--crema);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  font-weight: 600;
+}

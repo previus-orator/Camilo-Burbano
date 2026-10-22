@@ -1,0 +1,16 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar contenido"
+    "footer footer";
+  gap: 16px;
+  min-height: 100vh;
+  background-color: var(--crema);
+}
+app-header    { grid-area: header; }
+app-sidebar   { grid-area: sidebar; margin-left: 16px; }
+app-contenido { grid-area: contenido; margin-right: 16px; }
+app-footer    { grid-area: footer; }

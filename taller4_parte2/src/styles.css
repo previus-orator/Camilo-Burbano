@@ -1,0 +1,20 @@
+:root {
+  --gris-claro: #edede9;
+  --arena: #d6ccc2;
+  --crema: #f5ebe0;
+  --beige: #e3d5ca;
+  --rosado: #d5bdaf;
+
+  --texto: #3b2f2f;
+  --sombra: 0 2px 8px rgba(59, 47, 47, 0.15);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--texto);
+}

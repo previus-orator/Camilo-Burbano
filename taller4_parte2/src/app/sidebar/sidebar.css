@@ -1,0 +1,14 @@
+:host { display: block; }
+.sidebar {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--beige);
+  border: 1px solid var(--arena);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  font-weight: 600;
+}

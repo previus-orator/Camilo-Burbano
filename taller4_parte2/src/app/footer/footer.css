@@ -1,0 +1,10 @@
+:host { display: block; }
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  background-color: var(--rosado);
+  box-shadow: 0 -2px 8px rgba(59, 47, 47, 0.15);
+  font-weight: 600;
+}
